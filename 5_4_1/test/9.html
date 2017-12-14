@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="renderer" content="webkit">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<title>随堂测试</title>
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="../../js/jquery.min.js"></script>
+<script src="../bootstrap/js/bootstrap.min.js"></script>
+<script src="../../js/test/json2.js"></script>
+<script src="../../js/test/jstorage.js"></script>
+<script src="kctest.js"></script>
+<link href="../../css/style.css" rel="stylesheet">
+<!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+<!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="../js/respond.min.js"></script>
+<![endif]-->
+<script type="text/javascript">
+var id = 9;
+var nextpage = "10.html";
+var flag="";
+$(document).ready(function(){
+   $("#kclist").html(kclist);
+   $("img").each(function(){
+		$(this).attr("class","img-responsive");
+   })
+   var myanswer = $.jStorage.get(testid+"answer"+id);
+   if(myanswer!=null){
+	   setval(myanswer);
+	   showda();
+	   if(nextpage!=""){
+	   $("#np").show();
+	   $("#tj").hide();
+	   }
+	   else{
+	   $("#tj").hide();  
+		}
+	}
+});
+</script>
+<script src="../../js/test/common.js"></script>
+</head>
+
+<body>
+<div class="mnst_main">
+<div class="container">
+    <div class="row"><h1>随堂测试</h1></div>
+    <div class="row nav">
+      <div class="tx">二、简答题</div>
+      <div class="num">9 of 12　<span class="glyphicon glyphicon-hand-left"></span></div>
+    </div>
+    <div class="row st_content">
+        <label for="name">9.当工业机器人所使用的工具的TCP点相对与默认工具0的坐标方向没变，只是TCP相对于工具0的Y方向和Z正方向偏移了200mm时，如何建立工具坐标系？</label>
+          <div class="jiandbox">
+            <textarea rows="4" class="form-control" id="myanswer"></textarea>
+          </div>
+          <div class="ckda" id="daan">
+            <h1>参考答案：</h1>
+            <div class="ckda_content">
+				<p>在手动运行界面下，选择"工具坐标系设定"对话框，选中需要标定的工具号（工具0不能被标定），如工具3，右侧将显示选中工具3坐标系的坐标值。点击Z轴对应的坐标值，在弹出的对话框中即可进行坐标值的修改，Y输入偏移值200mm，Z输入偏移值200mm，点击"确认"完成坐标系设定。</p>
+            </div>
+          </div>
+          <div class="alert alert-success" style="display:none;" id="notice">警告！请不要提交。</div>
+        <div class="mnst_button">
+        <a href="10.html" class="btn btn-default" id="np" style="display:none;"><span class="glyphicon glyphicon-chevron-right"></span> 下一题</a><button type="button" class="btn btn-default" onClick="answertj();" id="tj"><span class="glyphicon glyphicon-share"></span> 提交</button>　<a href="stlist.html" class="btn btn-default"><span class="glyphicon glyphicon-list"></span> 试题列表</a>
+        </div>
+   </div>
+</div></div>
+
+<div class="modelbox">
+<!-- 提交模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog"  aria-labelledby="myModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <p class="modal-title" id="myModalLabel">
+               提示
+            </p>
+         </div>
+         <div class="modal-body">
+            <p id="mt1">在提交之前，你必须完成问题。</p>
+         </div>
+         <div class="modal-footer">
+            <button type="button" class="btn btn-default" 
+               data-dismiss="modal">ok
+            </button>
+         </div>
+      </div><!-- /.modal-content -->
+</div>
+</div>
+<!-- /.modal -->
+<!-- 试题列表模态框（Modal） -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog"  aria-labelledby="myModalLabel2" aria-hidden="true">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                  &times;
+            </button>
+            <p class="modal-title" id="myModalLabel2">
+               试题列表
+            </p>
+         </div>
+         <div class="modal-body">
+           <ul id="kclist">
+           </ul>
+         </div>
+         <div class="modal-footer"></div>
+      </div><!-- /.modal-content -->
+</div>
+</div>
+<!-- /.modal -->
+</div>
+</body>
+</html>
+

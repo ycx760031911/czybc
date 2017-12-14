@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/**
+ * 
+ * @chenxueshuang (chenxueshuang@outlook.com)
+ * @date    2016-11-28
+ * @version 1.0
+ */
+/*顶部logo+导航样式开始*/
+html{height:100%;}
+#top{position:relative;width:100%;height:90px;z-index:99;}
+.logo{display:inline-block;margin-top:28px;overflow:hidden;font-size:24px;color:#0c6865;}
+.navbar{float:right;margin:0;overflow:visible;}
+#mynavbar{z-index:999;/*border:1px solid #000;*/}
+.navbar-nav{margin-top:0;margin-bottom:0;margin-right:-15px;}
+.navbar-nav li a{line-height:58px;font-size:14px;text-align:center;color:#333;font-weight:bold;}
+.navbar .navbar-collapse, .navbar .navbar-form{border:0;}
+
+@media screen and (min-width:767px){
+.navbar .navbar-nav>li>a:hover,.navbar .navbar-nav>li>a.active{background-color:rgba(0,0,0,0);color:#0c6865;}
+}
+@media screen and (max-width:767px){
+#top{height:50px;background-color:#0c6865;}
+.navbar{width:100%;color:#fff;text-align:center;padding-left:30px;margin-right:0px;font-size:18px;line-height:48px;}
+.navbar .navbar-toggle .icon-bar{background-color:rgba(255,255,255,0.6);}
+.navbar .navbar-toggle:hover .icon-bar, .navbar .navbar-toggle:focus .icon-bar{background-color:rgba(255,255,255,1);}
+#mynavbar{position:absolute;top:51px;right:0px;background-color:#0c6865;color:#fff;}
+.navbar .navbar-nav>li>a{color:#fff;}
+.navbar .navbar-nav>li>a:hover,.navbar .navbar-nav>li>a.active{background-color:#f6b767;color:#fff;}
+.navbar-nav li a{line-height:32px;}
+}
+
+/*顶部logo+导航样式结束*/
+.footer{position:absolute;bottom:0;width:100%;height:60px;color:#fff;text-align:center;line-height:60px;z-index:10;}
+
+
+/*太阳云朵鸟*/
+.sun{position:absolute;top:-2%;right:26%;width:9%;opacity:0;}
+.cloud1{position:absolute;top:14%;left:12%;width:11%;opacity:1;}
+.cloud2{position:absolute;top:2%;left:40%;width:11%;opacity:1;}
+.cloud3{position:absolute;top:10%;right:16%;width:11%;opacity:1;}
+.birds{position:absolute;bottom:26%;left:0;opacity:1;} 
+@media screen and (max-width:767px){
+	.cloud1{top:14%;}
+	.cloud2{top:8%;}
+	.cloud3{top:12%;}
+}

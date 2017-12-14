@@ -1,0 +1,58 @@
+/* CSS Document */
+img{max-width:100%;}
+a { text-decoration:none;}
+a:hover { text-decoration:none;}
+ul,li { list-style:none;}
+
+.mnst_main { border:1px solid #e0e0e0; background:#fff;}
+.mnst_main h1 { font-size:160%; text-align:center; font-family:"微软雅黑"; height:2em; line-height:2em;}
+.mnst_main .nav { background:#f4f3f2; height:2.5em; line-height:2.5em; padding-left:1%; font-size:120%; padding:0 5% 0 2%;}
+.mnst_main .nav .tx { font-weight:bold; float:left;}
+.mnst_main .nav .num { float:right;}
+.mnst_button {text-align:center; margin-bottom:2%; margin-top:8%;}
+.st_content .radio img,.st_content .checkbox img { display:inline-block;}
+.st_content label[for=name] img { display:inline-block;}
+
+
+.st_list ul { margin:0; padding:0;}
+.st_list ul li { border-bottom:1px dashed #ccc; font-size:90%;}
+.st_list ul li a { color:#555; margin:1% 0; padding:0.8% 2%; display:block;}
+.st_list ul li a:hover { color:#000; background:#f0f0f0; border-radius:8px;}
+.st_list ul li a span { margin-right:8px;}
+.st_list ul li .glyphicon { float:right; color: #F00; padding-top:5px; padding-right:10px;}
+
+.mnst_main .btn-default {
+	color:#333;
+	background-color:#fff;
+	border-color:#ccc
+}
+.mnst_main .btn-default:hover,.mnst_main .btn-default:focus,.mnst_main .btn-default:active, .mnst_main .btn-default.active{
+	color:#fff;
+	background-color:#b2b2b2;
+	border-color:#adadad;
+	font-weight:bold;
+}
+
+
+@media (min-width:768px) {
+.st_content { padding:4%; position:relative;}
+.st_content .daan { position:absolute; left:-2%; top:0; color:#F00;}
+.st_content .radio,.st_content .checkbox { margin:2% 0;}
+.st_content .jiandbox { margin:2% 0;}
+}
+@media (max-width:768px) {
+.st_content { padding:10% 4%; position:relative;}
+.st_content .daan {
+	position: absolute;
+	left: -2%;
+	top: 0;
+	color: #F00;
+}
+.st_content .radio,.st_content .checkbox { margin:5% 0;}
+.st_content .jiandbox { margin:5% 0;}
+}
+
+.ckda { margin-top:2%;display:none;}
+.ckda h1 { font-weight:bold; font-size:14px; text-align:left; color:#F00;}
+.ckda .ckda_content { line-height:25px; font-size:14px;}
+.ckda .ckda_content p { text-indent:2em;}

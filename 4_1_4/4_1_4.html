@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1.0">
+<title>工业机器人操作与编程</title>
+<meta name="description" content="工业机器人操作与编程">
+<meta name="keywords" content="工业机器人操作与编程">
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/core/reset.css" rel="stylesheet">
+<link href="../css/core/common.css" rel="stylesheet">
+<link href="../css/inner.css" rel="stylesheet">
+<link href="../css/animate.css" rel="stylesheet">
+<!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+<!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="../js/respond.min.js"></script>
+<![endif]-->
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="../js/leftmenu.js" type="text/javascript"></script>
+<script src="../js/setleftmenu.js" type="text/javascript"></script>
+<script src="../js/mobliemenu.js" type="text/javascript"></script>
+<script src="../js/innerpage.js" type="text/javascript"></script>
+</head>
+<body>
+	<!-- 打印头部logo及导航 -->
+	<script src="../js/toper.js" type="text/javascript"></script>
+	<div class="container">
+    	<div class="main">
+    		<div class="moblie-menu visible-xs" id="moblie-menu">
+    			<!-- 手机端目录 -->
+    		</div>
+    		<ul class="left-menu hidden-xs" id="left-menu">
+    			<!--左侧目录-->
+    		</ul>
+	    	<div class="content">
+         	    <h2>4.1喷漆前的准备</h2>
+                <h3>4.1.4喷枪工具坐标系三点标定</h3>
+	    		<p class="text-center"><img src="images/4-5.png"></p>
+	    		<p class="text-center">图4-5 喷漆工具坐标系</p>
+	    		<p>本项目使用喷漆工具的TCP点设定在喷枪底部端点位置，相对与默认工具0的坐标方向不变， TCP位置发生改变。所以，采用三点法标定工具坐标系。</p>
+	    		<p class="text-center"><img src="images/4-6.png"></p>
+	    		<p class="text-center">图4-6 工具坐标系标定界面</p>
+	    		<p>点击工具坐标设定进入到工具坐标系设定界面， 选中需要标定的工具号（工具0不能被标定）， 点击“坐标标定”，选择三点标定，可弹出坐标标定对话框，如图4-7所示。通过标定空间中机器人末端在坐标系中的三个不同位置来计算工具坐标系。工具坐标系三点法标定操作步骤如下：</p>
+	    		<p>1）首先在机器人工作范围内找到一个非常精确的固定点作为参考点。</p>
+	    		<p>2）然后在工具上确定一个参考点（最好是工具的中心点）。</p>
+	    		<p>3）用之前介绍的手动操纵机器人的方法，去移动工具上的参考点，以三种不同的机器人姿态尽可能与固定点刚好碰上。</p>
+	    		<p>4）机器人通过这三个位置点数据计算求得TCP的数据，然后TCP的数据就保存在这个程序数据中被程序进行调用。</p>
+	    		<div class="flow">
+	    		<a href="../4_1_3/4_1_3.html" class="btn lf">上一节</a>
+                <a href="../4_1_5/4_1_5.html" class="btn rt">下一节</a>
+                </div>
+	    	</div>
+    	</div>
+    </div>
+	<!-- 打印底部版权 -->
+	<script src="../js/footer.js" type="text/javascript"></script>
+</body>
+</html>

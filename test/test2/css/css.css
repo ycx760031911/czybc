@@ -1,0 +1,233 @@
+BODY {
+	MARGIN-TOP: 6px;
+	SCROLLBAR-FACE-COLOR: #ebebeb;
+	FONT-SIZE: 16px;
+	SCROLLBAR-HIGHLIGHT-COLOR: #ffffff;
+	MARGIN-LEFT: 10px;
+	SCROLLBAR-SHADOW-COLOR: #ffffff;
+	COLOR: #000000;
+	SCROLLBAR-3DLIGHT-COLOR: #548dda;
+	MARGIN-RIGHT: 10px;
+	SCROLLBAR-ARROW-COLOR: #2f75ae;
+	SCROLLBAR-TRACK-COLOR: #e7eff5;
+	FONT-FAMILY: "宋体";
+	SCROLLBAR-DARKSHADOW-COLOR: #548dda;
+	line-height: 18px;
+}
+.ff {
+	FILTER: glow(color=black,strength=3); HEIGHT: 1px
+}
+FORM {
+	BORDER-RIGHT: medium none; PADDING-RIGHT: 0px; BORDER-TOP: medium none; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; BORDER-LEFT: medium none; PADDING-TOP: 0px; BORDER-BOTTOM: medium none
+}
+IMG {
+
+}
+P {
+	PADDING-LEFT: 0px;
+	FONT-SIZE: 13px;
+	TEXT-INDENT: 0px;
+	LINE-HEIGHT: 22px;
+	PADDING-TOP: 2px;
+	FONT-FAMILY: 宋体;
+	LETTER-SPACING: 1px;	
+}
+.txt3 {
+	PADDING-LEFT: 4px; FONT-SIZE: 13px; TEXT-INDENT: 32px; LINE-HEIGHT: 26px; PADDING-TOP: 2px; FONT-FAMILY: 宋体
+}
+TD {
+	PADDING-LEFT: 0px;
+	FONT-SIZE: 13px;
+	PADDING-TOP: 0px;
+	FONT-FAMILY: "宋体";
+	line-height: 23px;
+}
+ur {
+	FONT-SIZE: 13px; LINE-HEIGHT: 22px; FONT-FAMILY: 宋体
+}
+LI {
+	FONT-SIZE: 13px; LIST-STYLE-IMAGE: url(../images/bg4.gif); LINE-HEIGHT: 26px; FONT-FAMILY: 宋体; LETTER-SPACING: 1px
+}
+.biaoti {
+	FONT-WEIGHT: bold; FONT-SIZE: 15px; LINE-HEIGHT: 22px
+}
+.smalltext {
+	FONT-WEIGHT: normal; FONT-SIZE: 12px
+}
+.banquan {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; FONT-SIZE: 12px; PADDING-BOTTOM: 0px; COLOR: #ffffff; PADDING-TOP: 0px
+}
+.daohang:link {
+	TEXT-DECORATION: none
+}
+.daohang:visited {
+	TEXT-DECORATION: none
+}
+.redlink:link {
+	TEXT-DECORATION: none
+}
+.redlink:visited {
+	TEXT-DECORATION: none
+}
+.blacklink:link {
+	TEXT-DECORATION: none
+}
+.blacklink:visited {
+	TEXT-DECORATION: none
+}
+.bluelink:link {
+	TEXT-DECORATION: none
+}
+.bluelink:visited {
+	TEXT-DECORATION: none
+}
+.orangelink:link {
+	TEXT-DECORATION: none
+}
+.orangelink:visited {
+	TEXT-DECORATION: none
+}
+.daohang:active {
+	TEXT-DECORATION: underline
+}
+.daohang:hover {
+	TEXT-DECORATION: underline
+}
+.redlink:active {
+	TEXT-DECORATION: underline
+}
+.redlink:hover {
+	TEXT-DECORATION: underline
+}
+.blacklink:active {
+	TEXT-DECORATION: none
+}
+.blacklink:hover {
+	TEXT-DECORATION: none
+}
+.bluelink:active {
+	TEXT-DECORATION: none
+}
+.bluelink:hover {
+	TEXT-DECORATION: none
+}
+.orangelink:active {
+	TEXT-DECORATION: underline
+}
+.orangelink:hover {
+	TEXT-DECORATION: underline
+}
+.blacklink:link {
+	COLOR: #000000
+}
+.blacklink:visited {
+	COLOR: #000000
+}
+.blacklink:active {
+	COLOR: #000000
+}
+.blacklink:hover {
+	COLOR: #000000
+}
+.black {
+	COLOR: #000000
+}
+.bluelink:link {
+	COLOR: #015a81
+}
+.bluelink:visited {
+	COLOR: #094979
+}
+.bluelink:active {
+	COLOR: #ff6600
+}
+.bluelink:hover {
+	COLOR: #ff8040
+}
+.redlink:link {
+	COLOR: #ff0000
+}
+.redlink:visited {
+	COLOR: #ff0000
+}
+.redlink:active {
+	COLOR: #ff0000
+}
+.redlink:hover {
+	COLOR: #ff0000
+}
+.orangelink:link {
+	COLOR: #ffffff; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #015a81; TEXT-DECORATION: underline
+}
+A:hover {
+	COLOR: #ff9900; TEXT-DECORATION: none
+}
+A:link {
+	COLOR: #015a81; TEXT-DECORATION: underline
+}
+A:active {
+	COLOR: #0080c0; TEXT-DECORATION: none
+}
+SELECT {
+	FONT-SIZE: 14px; WIDTH: 90px
+}
+SELECT.qn01 {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; FONT-SIZE: 14px; BORDER-LEFT: #666666 1px solid; BORDER-BOTTOM: #666666 1px solid; BACKGROUND-COLOR: #eef7fd
+}
+SELECT.qn02 {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; FONT-SIZE: 14px; BORDER-LEFT: #666666 1px solid; COLOR: #003366; BORDER-BOTTOM: #666666 1px solid; BACKGROUND-COLOR: #eef7fd
+}
+INPUT.btn {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-LEFT: #666666 1px solid; WIDTH: 50px; BORDER-BOTTOM: #666666 1px solid; HEIGHT: 20px; BACKGROUND-COLOR: #cccccc; TEXT-ALIGN: center
+}
+INPUT.btn2 {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; BORDER-LEFT: #666666 1px solid; WIDTH: 50px; COLOR: #ffffff; BORDER-BOTTOM: #666666 1px solid; HEIGHT: 20px; BACKGROUND-COLOR: #006699; TEXT-ALIGN: center
+}
+INPUT.textfill {
+	BORDER-RIGHT: #006699 1px solid; BORDER-TOP: #006699 1px solid; FONT-SIZE: 14px; VERTICAL-ALIGN: middle; BORDER-LEFT: #006699 1px solid; WIDTH: 150px; COLOR: #006699; BORDER-BOTTOM: #006699 1px solid; HEIGHT: 20px; BACKGROUND-COLOR: #eef7fd; TEXT-ALIGN: left
+}
+TEXTAREA.t1 {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; BORDER-LEFT: #666666 1px solid; WIDTH: 530px; COLOR: #000000; BORDER-BOTTOM: #666666 1px solid; HEIGHT: 60px
+}
+TEXTAREA.t2 {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; BORDER-LEFT: #666666 1px solid; WIDTH: 450px; COLOR: #000000; BORDER-BOTTOM: #666666 1px solid; HEIGHT: 40px
+}
+TEXTAREA.t3 {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; FONT-SIZE: 14px; BORDER-LEFT: #666666 1px solid; WIDTH: 360px; COLOR: #006291; BORDER-BOTTOM: #666666 1px solid; HEIGHT: 100px; BACKGROUND-COLOR: #eef7fd
+}
+FORM {
+	FONT-SIZE: 14px; LINE-HEIGHT: 22px; FONT-FAMILY: "宋体"
+}
+.bb1 {
+	BORDER-RIGHT: #336699 1px solid; BORDER-TOP: #336699 1px solid; BORDER-LEFT: #336699 1px solid; BORDER-BOTTOM: #336699 1px solid
+}
+.txt1 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; FILTER: glow(color=black,strength=4); LINE-HEIGHT: 22px; FONT-FAMILY: "宋体"; LETTER-SPACING: 2px; HEIGHT: 1px
+}
+.txt2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 14px; FILTER: glow(color=#84B5E4,strength=3); LINE-HEIGHT: 22px; FONT-FAMILY: "宋体"; LETTER-SPACING: 2px; HEIGHT: 1px
+}
+.englishtxt {
+	FONT-SIZE: 14px; LINE-HEIGHT: 24px; FONT-FAMILY: verdana
+}
+.timu {
+	font-size: 14px;
+	font-weight: bold;
+	color: #003399;
+}
+.daan {
+	font-size: 13px;
+	font-weight: bold;
+	color: #0066FF;
+}
+.daanyd {
+	font-size: 13px;
+	font-weight: bold;
+	color: #FF6600;
+}
+
+
+.mh_mnst_title { color:#CC6600; font-size:16px; font-family:"微软雅黑";}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1.0">
+<title>工业机器人操作与编程</title>
+<meta name="description" content="工业机器人操作与编程">
+<meta name="keywords" content="工业机器人操作与编程">
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/core/reset.css" rel="stylesheet">
+<link href="../css/core/common.css" rel="stylesheet">
+<link href="../css/inner.css" rel="stylesheet">
+<link href="../css/animate.css" rel="stylesheet">
+<!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+<!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="../js/respond.min.js"></script>
+<![endif]-->
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="../js/leftmenu.js" type="text/javascript"></script>
+<script src="../js/setleftmenu.js" type="text/javascript"></script>
+<script src="../js/mobliemenu.js" type="text/javascript"></script>
+<script src="../js/innerpage.js" type="text/javascript"></script>
+</head>
+<body>
+	<!-- 打印头部logo及导航 -->
+	<script src="../js/toper.js" type="text/javascript"></script>
+	<div class="container">
+    	<div class="main">
+    		<div class="moblie-menu visible-xs" id="moblie-menu">
+    			<!-- 手机端目录 -->
+    		</div>
+    		<ul class="left-menu hidden-xs" id="left-menu">
+    			<!--左侧目录-->
+    		</ul>
+            <div class="wrap content no-border">
+                
+                <div id="content1">
+                <h2>拓展与提高2——会搬送箱子和沏茶的机器人</h2>
+                <p>近年，仿人机器人的研发取得了重大进展。Rollin’Justin是由德国航空航天中心(DLR)研制的一款机器人，能够完成复杂的双手动作，由于采用了移动平台，可以在房间中行动自如。它是一种服务机器人的雏形，未来可以帮助人们完成日常家务或在仓库里搬送物品。对运动顺序至关重要的快速通讯通过EtherCAT来实现，与此同时，由倍福的TwinCATPLC自动化控制软件实现精细的控制。</p>
+                <p>德国航空航天中心（DLR）位于德国We&szlig;ling市，Rollin’Justin机器人是其十多年的研究成果。这种人形移动式机器人是在由DLR研发的轻型机械臂和机械手基础上研制而成（例如，用于太空维护工作的机械臂和机械手）。通过旋转和移动底座可扩大机器人的抓取范围，底座装有4条独立的、可灵活伸缩的机械腿。这与人通过身躯和腿的运动扩大活动半径相类似。“Rollin’Justin上半身可自由旋转43度，并配有扭转传感器；共有51个关节，可以完成高度灵活的运动,能够灵敏地进行操作和交互运动。该机器人的双手可以娴熟地操作物体，例如搬移木箱或者沏茶。后者需要复杂的动作协调性。机器人必须一只手抓住茶叶罐，另一只手旋开它。然后，将茶叶粒倒入饮用玻璃杯。此时，通过手指轻扣塑料容器，精确地控制茶叶用量。最后将水从水瓶倒入茶杯。</p>
+                <h3>1．扭矩传感器实现敏捷操作</h3>
+                <p>视操控动作的不同，需要较松或较紧地协调手臂和手的动作：例如,抓起如木箱之类的大型物体时，两个手臂必须紧密地协调工作。另一方面，旋开螺帽，要求手和臂完成良好的同步运动。此外，Rollin’Justin也可以与人和周边环境进行互动。当撞到某物或者触碰到物体或者人时，它可以感知并立即中止动作，或者询问是否应继续工作。通过集成的语音识别系统，该机器人可识别约100个单词且能将其组成有意义的短语。此外,它还可以通过内置摄像头采集周围环境信息并识别目标，从而调整自己的运动方向。如在手指中安装扭矩传感器，确保Rollin’Justin可以灵敏地抓起像草莓之类的物体且不挤碎它们。机器人的脚的活动范围可调：当执行高动态性动作或者大范围移动动作时，Rollin’Justin可伸展开腿，扩大底盘范围，从而稳定上部躯体。需要穿过狭窄通道时，它会再次缩回腿。</p>
+                <h3>2．“通过EtherCAT，我们找到了理想的通信系统.”</h3>
+                <p>KlausKunze，来自德国航空航天中心机器人系统部机器人与机械电子研究所。他说，“研制Rollin’Justin时，使用第三方供应商成熟的硬件组件，使我们节省了大量耗时的研发工作。”“我们主要根据所需的目标功能和紧奏型设计来选择组件。”
+然而，这给德国航空航天中心带来的挑战是：必须整合各种不同的实时协议。采用了通过CAN、CANopen、SERCOS、SpaceWire和EtherCAT等实现通信的组件。这些不同现场总线之间的转换由EtherCAT从站上的倍福TwinCATPLC自动化软件完成。控制所需全部数据均通过Matlab®/Simulink®环境中的一个具有实时功能的总线协议同步传输。该环境安装在一台独立的实时计算机上，并由该计算机控制整个平台（包括机器人上部躯体）。“我们需要这样一个解决方案，一方面支持这些组件的通信技术，另一方面不影响这些组件的性能。例如，可以实现1毫秒的SERCOS驱动周期时间和较短的静区时间。”KlausKunze说。通过倍福的标准EtherCA
+</p>
+        <div class="flow">
+                <a href="../2_2_6/2_2_6.html" class="btn lf">上一节</a>
+                <a href="../2_4_1/2_4_1.html" class="btn rt">下一节</a>
+                </div>
+                </div>
+                
+            </div>
+    	</div>
+    </div>
+	<!-- 打印底部版权 -->
+	<script src="../js/footer.js" type="text/javascript"></script>
+</body>
+</html>

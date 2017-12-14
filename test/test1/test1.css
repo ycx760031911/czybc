@@ -1,0 +1,46 @@
+﻿body{
+margin-left:5%;
+margin-right:5%;
+line-height:30px;
+font-family:"微软雅黑";
+}
+
+
+
+.title_one{
+ color:#b7bb1b; 
+ font-size:18px; 
+ line-height:30px;
+ }
+
+TEXTAREA.t {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; BORDER-LEFT: #666666 1px solid; WIDTH: 530px; COLOR: #000000; BORDER-BOTTOM: #666666 1px solid; HEIGHT: 60px
+}
+
+/*答案颜色*/
+.corAns{color:#F00;}
+
+.textDiv{
+font-size:16px;
+font-weight:bold;
+}
+
+.ansDiv{
+margin-left:5%;
+margin-right:5%;
+font-size:16px;
+line-height:20px;
+background:#F1F1F1;
+padding:0 20px;
+}
+
+.test{
+padding-bottom:20px;
+}
+/*参考答案*/
+.ckda{
+color: #F00;
+font-weight:bold;}
+
+
+

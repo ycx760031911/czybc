@@ -1,0 +1,57 @@
+@charset "UTF-8";
+/**
+ * 
+ * @chenxueshuang (chenxueshuang@outlook.com)
+ * @date    2016-11-28
+ * @version 1.0
+ */
+.index-bg{background-color:#c2e3e8;height:100%;overflow:hidden;}
+.section1,.section2,.section3{position:relative;width:100%;height:100%;overflow:hidden;}
+.section1{left:0;top:-60px;z-index:1;}
+.section2{left:100%;top:-100%;z-index:2;}
+.section3{left:0;top:-100%;z-index:3;}
+
+.ground{position:relative;left:0;top:0;width:100%;height:100%;overflow:hidden;}
+/*第一屏背景*/
+.m-bg{position:absolute;bottom:-743px;left:0;}
+.mountain{position:absolute;bottom:-743px;left:0;}
+.tree2{position:absolute;bottom:-421px;left:0;}
+.tree1{position:absolute;bottom:-323px;left:0;}
+@media screen and (min-width:1920px){
+	.m-bg,.mountain,.tree2,.tree1{left:50%;margin-left:-960px;}
+}
+/*第二屏对话框信息展示*/
+.brief1,.brief2,.brief3,.brief4{position:relative;left:0;top:0;width:100%;height:100%;}
+.pre,.next{position:absolute;bottom:50%;width:54px;height:135px;background:url(../images/bt_arr.png) top left no-repeat;}
+.pre{left:-54px;}
+.next{right:-54px;background-position:-68px 0;}
+.pre:hover{background-position:0 -144px;}
+.next:hover{background-position:-68px -144px;}
+
+.dialog-bg{position:absolute;bottom:16%;left:50%;margin-left:-600px;}
+.info-txt{position:absolute;bottom:16%;margin-bottom:70px;left:50%;margin-left:-524px;}
+
+@media screen and (min-width:1024px){
+	.dialog-bg{bottom:30%;}
+	.info-txt{bottom:30%;}
+}
+@media screen and (max-width:1200px){
+	.dialog-bg{left:0;margin-left:0px;}
+	.info-txt{left:0;margin-bottom:6%;margin-left:5%;width:90%;}
+}
+
+.circle,.circle-content{display:none;position:absolute;top:-10%;left:0;width:70%;margin:0 15%;}
+@media screen and (max-width:767px){
+	.section1{top:-50px;}
+	.section3{overflow:visible;}
+	.circle,.circle-content{display:block;width:90%;margin:0 5%;}
+}
+@media screen and (min-width:768px) and (max-width-1023px){
+	.section1{top:-50px;}
+	.section3{overflow:visible;}
+	.circle,.circle-content{display:block;width:90%;margin:0 5%;}
+}
+
+.enter{position:absolute;bottom:-36px;left:50%;margin-left:-60px;width:120px;line-height:36px;background-color:#f6b767;text-align:center;color:#fff;font-weight:bold;border-radius:8px;z-index:9;}
+
+

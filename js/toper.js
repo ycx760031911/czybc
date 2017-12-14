@@ -1,0 +1,25 @@
+// JavaScript Document
+var head ='<div id="top"><div class="container">';
+head +='<div class="logo hidden-xs">工业机器人操作与编程</div>';
+head +='<div class="navbar" role="navigation">';
+head +='<div class="navbar-header visible-xs">';
+head +='<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mynavbar">';
+head +='<span class="sr-only">切换导航</span>';
+head +='<span class="icon-bar">';
+head +='</span><span class="icon-bar"></span>';
+head +='<span class="icon-bar"></span></button>工业机器人操作与编程</div>';
+head +='<div class="collapse navbar-collapse" id="mynavbar">';
+head +='<ul class="nav navbar-nav">';
+head +='<li><a href="../index.html">首页</a></li>';
+head +='<li><a href="../info/info.html">课程简介</a></li>';
+head +='<li><a href="../1_0_1/1_0_1.html">课程学习</a></li>';
+head +='<li><a href="../test/test01.html">模拟测试</a></li>';
+head +='<li><a href="../resource/resource01.html">拓展资源</a>';
+head +='</li></ul></div></div></div></div>';
+head +='<div class="section1 hidden-xs">';
+head +='<img class="sun animated rubberBand" src="../images/sun.png">';
+head +='<img class="cloud1 cloud slideUpDown infinite" src="../images/cloud1.png">';
+head +='<img class="cloud2 cloud slideUpDown infinite" src="../images/cloud2.png">';
+head +='<img class="cloud3 cloud slideUpDown infinite" src="../images/cloud3.png">';
+head +='</div>';
+document.write(head);

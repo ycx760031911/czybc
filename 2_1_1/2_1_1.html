@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1.0">
+<title>工业机器人操作与编程</title>
+<meta name="description" content="工业机器人操作与编程">
+<meta name="keywords" content="工业机器人操作与编程">
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/core/reset.css" rel="stylesheet">
+<link href="../css/core/common.css" rel="stylesheet">
+<link href="../css/inner.css" rel="stylesheet">
+<link href="../css/animate.css" rel="stylesheet">
+<!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+<!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="../js/respond.min.js"></script>
+<![endif]-->
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="../js/leftmenu.js" type="text/javascript"></script>
+<script src="../js/setleftmenu.js" type="text/javascript"></script>
+<script src="../js/mobliemenu.js" type="text/javascript"></script>
+<script src="../js/innerpage.js" type="text/javascript"></script>
+</head>
+<body>
+	<!-- 打印头部logo及导航 -->
+	<script src="../js/toper.js" type="text/javascript"></script>
+	<div class="container">
+    	<div class="main">
+    		<div class="moblie-menu visible-xs" id="moblie-menu">
+    			<!-- 手机端目录 -->
+    		</div>
+    		<ul class="left-menu hidden-xs" id="left-menu">
+    			<!--左侧目录-->
+    		</ul>
+	    	<div class="content">
+		<h2>2.1新建、编辑和加载程序</h2>
+            	<p><strong>[任务描述]</strong></p>
+	    		<p>程序是为使机器人完成某种任务而设置的动作顺序描述。在示教操作中，产生的示教数据（如轨迹数据、作业条件、作业顺序等）和机器人指令都将保存在程序中。当机器人自动运行时，将执行程序以再现所记忆的动作。</p>
+                <p><strong>[知识准备]</strong></p>
+                <h3>2.1.1程序的基本信息</h3>
+	    		<p>常见的程序编制方法有两种，示教编程方法和离线编程方法。示教编程方法是由操作人员引导，控制机器人运动，记录机器人作业的程序点，并插入所需的机器人命令来完成程序的编制；离线示教是操作者不对实际作业的机器人直接进行示教，而是在离线编程系统中进行编程或在模拟环境中进行仿真，生成示教数据，通过PC间接对机器人进行示教。示教编程方法包括示教、编辑和轨迹再现，可以通过示教盒示教实现，由于示教方式实用性强，操作简便，因此大部分机器人都采用这种方式。本任务中我们采用示教编程方法。在操作机器人实现搬运运动之前需新建一个程序，用来保存示教数据和运动指令。</p>
+	    		<p>程序的基本信息包括：程序名、程序注释、子类型、写保护、程序指令和程序结束标志。</p>
+                <p class="text-center">表2-1 程序基本信息及功能</p>
+				<table>
+                	<tr>
+                    	<th width="10%">序号</th>
+                        <th width="20%">程序基本信息</th>
+                        <th width="70%">功能</th>
+                    </tr>
+                    <tr>
+                    	<td>1</td>
+                        <td>程序名</td>
+                        <td>用以识别存入控制器内存中的程序，在同一个目录下不能出现包含两个或更多拥有相同程序名的程序。程序名长度不超过8个字符，有字母、数字、下划线（_）组成。</td>
+                    </tr>
+                    <tr>
+                    	<td>2</td>
+                        <td>程序注释</td>
+                        <td>程序注释连同程序名一起用来描述、选择界面上显示的附加信息。最长16个字符，有字母、数字及符号（_、@、*、）组成。新建程序之后可在程序选择之后来修改程序注释。</td>
+                    </tr>
+                    <tr>
+                    	<td>3</td>
+                        <td>子类型</td>
+                        <td>用于设置程序文件的类型。目前本系统只支持机器人程序这一类型。</td>
+                    </tr>
+                    <tr>
+                    	<td>4</td>
+                        <td>组标志</td>
+                        <td>设置程序操作的动作组，必须在程序执行前设置。目前本系统只有一个操作组，默认的操做组是组1（1，*，*，*，*，）。</td>
+                    </tr>
+                    <tr>
+                    	<td>5</td>
+                        <td>写保护</td>
+                        <td>指定该程序可否被修改。若设置为"是"，程序名、注释、子类型、组标志等不可修改。若此项设置为"否"，程序信息可修改。当程序创建且操作确定后，可将此项设置为"是"来保护程序，防止他人或自己误修改。</td>
+                    </tr>
+                    <tr>
+                    	<td>6</td>
+                        <td>程序指令</td>
+                        <td>包括运动指令、寄存器指令等示教中涉及的所有指令。</td>
+                    </tr>
+                    <tr>
+                    	<td>7</td>
+                        <td>程序结束标志</td>
+                        <td>程序结束标志（END）自动显示在程序的最后一条指令的下一行。只要有新的指令添加到程序中，程序结束标志会在屏幕上向下移动，所以，程序结束标志总在最后一行。当系统执行完最后一条程序指令后，执行到程序结束标志时，就会自动返回到程序的第一行并终止。</td>
+                    </tr>
+                </table>
+                <div class="flow">
+                <a href="../2_0_1/2_0_1.html" class="btn lf">上一节</a>
+                <a href="../2_1_2/2_1_2.html" class="btn rt">下一节</a>
+                </div>
+	    	</div>
+    	</div>
+    </div>
+	<!-- 打印底部版权 -->
+	<script src="../js/footer.js" type="text/javascript"></script>
+</body>
+</html>

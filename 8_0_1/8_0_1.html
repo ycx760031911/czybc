@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1.0">
+<title>工业机器人操作与编程</title>
+<meta name="description" content="工业机器人操作与编程">
+<meta name="keywords" content="工业机器人操作与编程">
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/core/reset.css" rel="stylesheet">
+<link href="../css/core/common.css" rel="stylesheet">
+<link href="../css/inner.css" rel="stylesheet">
+<link href="../css/animate.css" rel="stylesheet">
+<!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+<!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="../js/respond.min.js"></script>
+<![endif]-->
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="../js/leftmenu.js" type="text/javascript"></script>
+<script src="../js/setleftmenu.js" type="text/javascript"></script>
+<script src="../js/mobliemenu.js" type="text/javascript"></script>
+<script src="../js/innerpage.js" type="text/javascript"></script>
+</head>
+<body>
+	<!-- 打印头部logo及导航 -->
+	<script src="../js/toper.js" type="text/javascript"></script>
+	<div class="container">
+    	<div class="main">
+    		<div class="moblie-menu visible-xs" id="moblie-menu">
+    			<!-- 手机端目录 -->
+    		</div>
+    		<ul class="left-menu hidden-xs" id="left-menu">
+    			<!--左侧目录-->
+    		</ul>
+            <div class="wrap content no-border">
+                
+                 <h2> <p class="text-center">附录Ⅰ：程序报警定义</p></h2>
+  
+        <table width="100%" border="2">
+            <thead>
+                <tr>
+                    <th width="15%">报警号</th>
+                    <th width="15%">报警级别</th>
+                   <th width="35%">报警定义</th>
+                   <th width="35%">备注</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>5100</td>
+                    <td>2</td>
+                   <td>分配内存失败</td>
+                   <td></td>
+                </tr>
+                <tr>
+                    <td>5200</td>
+                    <td>2</td>
+                    <td>加载程序失败 </td>
+                    <td></td>
+                </tr>
+            <tr>
+                    <td>5300</td>
+                    <td>2</td>
+                   <td>语法匹配失败</td>
+                   <td></td>
+                </tr>
+                <tr>
+                    <td>5400</td>
+                    <td>2</td>
+                   <td>指令格式错</td>
+                   <td></td>
+                </tr>
+                <tr>
+                    <td>5500</td>
+                    <td>2</td>
+                   <td>位置变量(P)地址无效</td>
+                   <td>位置变量(P)地址最大999</td>
+                </tr>
+                <tr>
+                    <td>5600</td>
+                    <td>2</td>
+                   <td>位置寄存器(PR)地址无效</td>
+                   <td>位置寄存器(PR)地址最大99</td>
+                </tr>
+                <tr>
+                    <td>5700</td>
+                    <td>2</td>
+                   <td>寄存器(R)地址无效</td>
+                   <td>寄存器(R)地址最大199</td>
+                </tr>
+                <tr>
+                    <td>5800</td>
+                    <td>2</td>
+                   <td>寄存器(AR)地址无效</td>
+                   <td>参数寄存器(AR)地址最大9</td>
+                </tr>
+                <tr>
+                    <td>5900</td>
+                    <td>2</td>
+                   <td>缺少位置参数</td>
+                   <td>移动指令(J、L、C)未指定位置参数</td>
+                </tr>
+                <tr>
+                    <td>6000</td>
+                    <td>2</td>
+                   <td>缺少速度参数</td>
+                   <td>移动指令(J、L、C)未指定速度参数</td>
+                </tr>
+                <tr>
+                    <td>6100</td>
+                    <td>2</td>
+                   <td>缺少数据单位</td>
+                   <td>缺少单位，如mm/sec</td>
+                </tr>
+                <tr>
+                    <td>6200</td>
+                    <td>2</td>
+                   <td>缺少轨迹过渡类型</td>
+                   <td>移动指令(J、L、C)缺少过渡类型(FINE/CNT)</td>
+                </tr>
+                <tr>
+                    <td>6300</td>
+                    <td>2</td>
+                   <td>跳转目标无效</td>
+                   <td></td>
+                </tr>
+                <tr>
+                    <td>6400</td>
+                    <td>2</td>
+                   <td>子程序不存在</td>
+                   <td></td>
+                </tr>
+                <tr>
+                    <td>6500</td>
+                    <td>2</td>
+                   <td>子程序嵌套层次过多</td>
+                   <td>最多允许嵌套调用10层</td>
+                </tr>
+                <tr>
+                    <td>6600</td>
+                    <td>2</td>
+                   <td>缺少执行语句</td>
+                   <td>IF指令缺少执行语句JMP或CALL</td>
+                </tr>
+                <tr>
+                    <td>6700</td>
+                    <td>2</td>
+                   <td>参数无效</td>
+                   <td>CALL指令传递的参数(AR)无效，仅支持字符串型和数型参数</td>
+                </tr>
+                <tr>
+                    <td>6800</td>
+                    <td>2</td>
+                   <td>参数过多</td>
+                   <td>CALL指令最多可传递10个参数(AR)</td>
+                </tr>
+                <tr>
+                    <td>6900</td>
+                    <td>2</td>
+                   <td>除零</td>
+                   <td></td>
+                </tr>
+                <tr>
+                    <td>7000</td>
+                    <td>2</td>
+                   <td>数据类型不一致</td>
+                   <td>位置寄存器指令操作数类型不一致，应统一为关节位置或直角坐标</td>
+                </tr>
+                <tr>
+                    <td>7100</td>
+                    <td>2</td>
+                   <td>用户报警号无效</td>
+                   <td>用户报警号范围9000-9099，超出此范围无效</td>
+                </tr>
+                <tr>
+                    <td>7200</td>
+                    <td>2</td>
+                   <td>数字IO地址无效</td>
+                   <td>地址超出允许范围</td>
+                </tr>
+                <tr>
+                    <td>7300</td>
+                    <td>2</td>
+                   <td>模拟量IO地址无效</td>
+                   <td>地址超出允许范围</td>
+                </tr>
+      
+              </tbody>
+            </table>
+            <div class="flow">
+            <a href="../7_3_1/7_3_1.html" class="btn lf">上一节</a>
+            <a href="../9_0_1/9_0_1.html" class="btn rt">下一节</a>
+            </div>
+          </div>
+    	</div>
+    </div>
+	<!-- 打印底部版权 -->
+	<script src="../js/footer.js" type="text/javascript"></script>
+</body>
+</html>

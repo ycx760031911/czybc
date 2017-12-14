@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1.0">
+<title>工业机器人操作与编程</title>
+<meta name="description" content="工业机器人操作与编程">
+<meta name="keywords" content="工业机器人操作与编程">
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/core/reset.css" rel="stylesheet">
+<link href="../css/core/common.css" rel="stylesheet">
+<link href="../css/inner.css" rel="stylesheet">
+<link href="../css/animate.css" rel="stylesheet">
+<!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+<!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="../js/respond.min.js"></script>
+<![endif]-->
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="../js/leftmenu.js" type="text/javascript"></script>
+<script src="../js/setleftmenu.js" type="text/javascript"></script>
+<script src="../js/mobliemenu.js" type="text/javascript"></script>
+<script src="../js/innerpage.js" type="text/javascript"></script>
+</head>
+<body>
+	<!-- 打印头部logo及导航 -->
+	<script src="../js/toper.js" type="text/javascript"></script>
+	<div class="container">
+    	<div class="main">
+    		<div class="moblie-menu visible-xs" id="moblie-menu">
+    			<!-- 手机端目录 -->
+    		</div>
+    		<ul class="left-menu hidden-xs" id="left-menu">
+    			<!--左侧目录-->
+    		</ul>
+	    	<div class="content">
+	    		<h2>5.2数控车床上下料编程与操作</h2>
+                <h3>5.2.2上下料运动规划</h3>	
+	    		<p>1、 任务规划</p>
+	    		<p>机器人上下料的运动可分解成为 "拾取物料"、"上料"、 "下料"、"放置"等一系列子任务，如图5-2所示。</p>
+	    		<p class="text-center"><img src="images/5-2.png"></p>
+	    		<p class="text-center">图5-2 机床上下料工作任务流程图</p>
+	    		<p>2、 动作规划</p>
+	    		<p>机器人上下料的动作规划如下图所示。</p>
+ 	    		<p class="text-center"><img src="images/5-3.png"></p>
+	    		<p class="text-center">图5-3 机器人动作规划流程图</p>   
+	    		<p>3、路径规划</p>
+	    		<p>整体路径规划：</p>
+	    		<p>零点　→　工作过渡点　→　上下料路径　→　工作过渡点　→　零点</p>
+	    		<p>上下料路径规划：</p>
+	    		<p>拾取点正上方　→　拾取点　→　拾取点正上方　→　上下料点右侧　→　上下料点（上料）　→　上下料点右侧　→　上下料点（下料）　→　上下料点右侧　→　放置点右侧1　→　放置点正上方　→　放置点　→　放置点正上方　→　放置点右侧2</p>
+	    		<div class="flow">
+	    		<a href="../5_2_1/5_2_1.html" class="btn lf">上一节</a>
+                <a href="../5_2_3/5_2_3.html" class="btn rt">下一节</a>\
+                </div>
+	    	</div>
+    	</div>
+    </div>
+	<!-- 打印底部版权 -->
+	<script src="../js/footer.js" type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="user-scalable=no,width=device-width,initial-scale=1.0">
+<title>工业机器人操作与编程</title>
+<meta name="description" content="工业机器人操作与编程">
+<meta name="keywords" content="工业机器人操作与编程">
+<link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<link href="../css/core/reset.css" rel="stylesheet">
+<link href="../css/core/common.css" rel="stylesheet">
+<link href="../css/inner.css" rel="stylesheet">
+<link href="../css/animate.css" rel="stylesheet">
+<!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
+<!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="../js/respond.min.js"></script>
+<![endif]-->
+<script src="../js/jquery.min.js" type="text/javascript"></script>
+<script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="../js/jquery.easing.1.3.js" type="text/javascript"></script>
+<script src="../js/leftmenu.js" type="text/javascript"></script>
+<script src="../js/setleftmenu.js" type="text/javascript"></script>
+<script src="../js/mobliemenu.js" type="text/javascript"></script>
+<script src="../js/innerpage.js" type="text/javascript"></script>
+</head>
+<body>
+	<!-- 打印头部logo及导航 -->
+	<script src="../js/toper.js" type="text/javascript"></script>
+	<div class="container">
+    	<div class="main">
+    		<div class="moblie-menu visible-xs" id="moblie-menu">
+    			<!-- 手机端目录 -->
+    		</div>
+    		<ul class="left-menu hidden-xs" id="left-menu">
+    			<!--左侧目录-->
+    		</ul>
+	    	<div class="content">
+            <h2>4.2喷漆示教编程</h2>
+            <h3>4.2.2标签指令LBL和无条件跳转指令JMP</h3>
+<p>1、标签指令LBL</p>
+<p>指令格式：<strong>LBL[i]</strong></p>
+<p>指令注释：标签指令用于指定程序执行的分支跳转的目标。</p>
+<p>程序说明如下：</p>
+<p><strong>LBL</strong>—— 标签指令</p>
+<p><strong>[i]</strong>——标签序号(1到32767)</p>
+<p>示例： LBL[2]</p>
+<p>说 明 ：</p>
+<p>标签一经执行，对于条件指令、等待指令和无条件跳转指令都是适用的。不能把标签序号指定为间接寻址（如LBL[R[1]]）。</p>
+<p>2、无条件跳转指令JMP</p>
+<p>指令格式：指令格式：<strong> JMP LBL [ i ]</strong></p>
+<p>指令注释：无条件跳转指令是指在同一个程序中，无条件的从程序的一行跳转到另一行去执行，即将程序控制转移到指定的标签。</p>
+<p>程序说明如下：</p>
+<p><strong>JMP</strong>——无条件跳转指令</p>
+<p><strong>[i]</strong>——标签序号(1到32767)</p>
+<p>示例：  JMP LBL[2]</p>
+<div class="flow">
+<a href="../4_2_1/4_2_1.html" class="btn lf">上一节</a>
+<a href="../4_2_3/4_2_3.html" class="btn rt">下一节</a>
+</div>
+	    	</div>
+    	</div>
+    </div>
+	<!-- 打印底部版权 -->
+	<script src="../js/footer.js" type="text/javascript"></script>
+</body>
+</html>
